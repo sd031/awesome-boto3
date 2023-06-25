@@ -12,8 +12,8 @@ def remove_old_snapshots():
     thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
 
     # Find snapshots older than 30 days
-    old_snapshots = [snapshot for snapshot in snapshots if snapshot['StartTime'] < thirty_days_ago]
-
+    # old_snapshots = [snapshot for snapshot in snapshots if snapshot['StartTime'] < thirty_days_ago]
+    old_snapshots = [snapshot for snapshot in snapshots]
     # Delete old snapshots
     for snapshot in old_snapshots:
         snapshot_id = snapshot['SnapshotId']

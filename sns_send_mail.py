@@ -10,7 +10,7 @@ try:
     response = client.send_email(
         Destination={
             'ToAddresses': [
-                'sandip.sandip.das5@gmail.com',
+                'sandip.das.developer@gmail.com',
             ],
         },
         Message={
